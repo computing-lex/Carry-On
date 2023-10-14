@@ -170,7 +170,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 402
-      y: 1734
+      y: 1736
       width: 122
       height: 167
     spriteID: 7a4f8af971ffde546a0b0c5bde69ae21
@@ -185,8 +185,8 @@ ScriptedImporter:
     spritePosition: {x: 365, y: 613}
   - name: Layer 21
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.49080235, y: 0.9637078}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -212,7 +212,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 401
-      y: 241
+      y: 243
       width: 176
       height: 360
     spriteID: 7840cd97c351f0f41b214b28857ec7aa
@@ -269,8 +269,8 @@ ScriptedImporter:
     spritePosition: {x: 259, y: 493}
   - name: leglowerr
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4791761, y: 0.9221054}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
