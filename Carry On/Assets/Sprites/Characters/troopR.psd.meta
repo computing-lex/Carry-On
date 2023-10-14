@@ -337,8 +337,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 11
-      y: 1249
+      x: 4
+      y: 1248
       width: 282
       height: 344
     spriteID: a7ad82bb9d90af64a800f7a2e428bb48

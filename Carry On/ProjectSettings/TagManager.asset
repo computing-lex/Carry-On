@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Character
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Mesh
+    uniqueID: 280886653
+    locked: 0
+  - name: Bones
+    uniqueID: 753125199
+    locked: 0
+  - name: Controls
+    uniqueID: 2976405165
     locked: 0
