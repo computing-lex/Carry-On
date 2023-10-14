@@ -212,9 +212,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 401
-      y: 243
+      y: 235
       width: 176
-      height: 360
+      height: 365
     spriteID: 7840cd97c351f0f41b214b28857ec7aa
     spriteBone: []
     spriteOutline: []
@@ -254,9 +254,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 297
+      y: 295
       width: 208
-      height: 479
+      height: 481
     spriteID: 9a9513ac3661ae144be94a04b7172151
     spriteBone: []
     spriteOutline: []
@@ -421,9 +421,9 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 225
+      x: 217
       y: 297
-      width: 165
+      width: 173
       height: 407
     spriteID: 3b5854fb752443e4199a6e3c02430d1a
     spriteBone: []
@@ -505,10 +505,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 401
-      y: 605
-      width: 169
-      height: 355
+      x: 399
+      y: 604
+      width: 171
+      height: 345
     spriteID: c92bdad5fee73274fae95efbcabcda80
     spriteBone: []
     spriteOutline: []
