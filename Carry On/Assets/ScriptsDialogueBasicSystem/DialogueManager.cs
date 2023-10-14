@@ -63,7 +63,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 &&
+            Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("bruh");
             ContinueStory();
@@ -107,13 +108,18 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
 
+
         foreach (char c in line.ToCharArray())
         {
 
             dialogueText.text += c;
             blip.Play();
             yield return new WaitForSeconds(typingSpeed);
+
+            canContinueToNextLine = false;
         }
+
+        canContinueToNextLine = true;
     }
 
 
@@ -147,15 +153,20 @@ public class DialogueManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-
+        
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
 
     public void MakeChoice(int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
 
+        if (canContinueToNextLine)
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);
+
+            ContinueStory();
+        }
     }
 
 }

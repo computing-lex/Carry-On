@@ -10,11 +10,13 @@ public class DialogueTrigger : MonoBehaviour {
 
     private void Update()
     {
-        if (!DialogueManager.GetInstance().dialogueisPlaying && Input.GetKeyDown(KeyCode.E))
+        if (!(DialogueManager.GetInstance().dialogueisPlaying))
         {
             Debug.Log("bruh2");
-
-            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+            }
         }
     }
 
