@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 4082927926536283315}
   m_Layer: 0
   m_Name: bone_22_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,8 +271,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 76bda98d1bf2d440c867877d04e0f539, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -333,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116357860548016915}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000004326354, y: -0.000000003956251, z: 0.50386083, w: 0.8637849}
+  m_LocalRotation: {x: -0.000000043263544, y: -0.0000000039562456, z: 0.50386107, w: 0.8637848}
   m_LocalPosition: {x: 0.00000038273188, y: 1.0000001, z: -7.6041997e-14}
   m_LocalScale: {x: 2.5456645, y: 2.5456645, z: 2.545668}
   m_ConstrainProportionsScale: 0
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 447507792453785755}
   m_Layer: 0
   m_Name: foot1_r_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 5981187913371203991}
   m_Layer: 0
   m_Name: foot_f_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 6939036258746667717}
   m_Layer: 0
   m_Name: head_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1009,8 +1009,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 76bda98d1bf2d440c867877d04e0f539, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 8701816292160910537}
   m_Layer: 0
   m_Name: hips_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 7050653500772219760}
   m_Layer: 0
   m_Name: hand_r_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2526,7 +2526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4039734017316378278}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000821622, y: 0.000000019558982, z: -0.29375768, w: 0.9558799}
+  m_LocalRotation: {x: -0.00000008036626, y: 0.00000002994149, z: -0.29375726, w: 0.95588005}
   m_LocalPosition: {x: -0.00000020034626, y: 1.0000001, z: 0.0000000843722}
   m_LocalScale: {x: 0.9503376, y: 0.9503376, z: 0.9503375}
   m_ConstrainProportionsScale: 0
@@ -2561,7 +2561,7 @@ GameObject:
   - component: {fileID: 9173549064193788761}
   m_Layer: 0
   m_Name: foot_f_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2592,7 +2592,7 @@ GameObject:
   - component: {fileID: 7244662797899210001}
   m_Layer: 0
   m_Name: foot_r_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2625,7 +2625,7 @@ GameObject:
   - component: {fileID: 319564573449589929}
   m_Layer: 0
   m_Name: foot_f_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2683,8 +2683,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: adf1c56ba844f45f0ac7bdc95d1e550e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2746,7 +2746,7 @@ GameObject:
   - component: {fileID: 6224261639513185340}
   m_Layer: 0
   m_Name: hand_f_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 4989880521840442822}
   m_Layer: 0
   m_Name: hand_f_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2870,7 +2870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4557025868303248448}
   serializedVersion: 2
-  m_LocalRotation: {x: 9.237056e-14, y: 3.741452e-14, z: 0.4590254, w: 0.88842314}
+  m_LocalRotation: {x: 8.881784e-14, y: 3.6970427e-14, z: 0.45902562, w: 0.8884231}
   m_LocalPosition: {x: 0.0000000029587173, y: 1.0000001, z: 0.00000008428304}
   m_LocalScale: {x: 0.26484096, y: 0.26484096, z: 0.26484108}
   m_ConstrainProportionsScale: 0
@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 669195912879164774}
   m_Layer: 0
   m_Name: hand1_r_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3228,7 +3228,7 @@ GameObject:
   - component: {fileID: 2674046183416733871}
   m_Layer: 0
   m_Name: foot_r_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3307,7 +3307,7 @@ GameObject:
   - component: {fileID: 3109190413473917918}
   m_Layer: 0
   m_Name: hand_r_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3339,7 +3339,7 @@ GameObject:
   - component: {fileID: 7260881732104273403}
   m_Layer: 0
   m_Name: head_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3371,7 +3371,7 @@ GameObject:
   - component: {fileID: 943879735019142438}
   m_Layer: 0
   m_Name: foot1_f_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3985,7 +3985,7 @@ GameObject:
   - component: {fileID: 7520499639180414245}
   m_Layer: 0
   m_Name: neck_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4030,7 +4030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6460101257352497196}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000084287116, y: 0.0000000053739666, z: -0.12777369, w: -0.99180335}
+  m_LocalRotation: {x: -0.000000084273935, y: 0.000000015910665, z: -0.12777343, w: -0.9918034}
   m_LocalPosition: {x: -0.000000006334461, y: 1.0000001, z: 9.093657e-11}
   m_LocalScale: {x: 0.33800623, y: 0.33800623, z: 0.338006}
   m_ConstrainProportionsScale: 0
@@ -4065,7 +4065,7 @@ GameObject:
   - component: {fileID: 3022914872532062250}
   m_Layer: 0
   m_Name: foot1_r_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4147,7 +4147,7 @@ GameObject:
   - component: {fileID: 7120992590644506681}
   m_Layer: 0
   m_Name: foot1_f_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4377,7 +4377,7 @@ GameObject:
   - component: {fileID: 7488775018107596721}
   m_Layer: 0
   m_Name: bone_22_CTRL_GRP
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4664,7 +4664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6295151909080067329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TroopR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4700,7 +4700,7 @@ GameObject:
   - component: {fileID: 6859102182513612472}
   m_Layer: 0
   m_Name: foot_r_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4758,8 +4758,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: adf1c56ba844f45f0ac7bdc95d1e550e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4835,7 +4835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7503180517940665586}
   serializedVersion: 2
-  m_LocalRotation: {x: -8.2156504e-14, y: -3.0198066e-14, z: 0.6634292, w: 0.74823904}
+  m_LocalRotation: {x: -8.2156504e-14, y: -3.1974423e-14, z: 0.6634291, w: 0.7482393}
   m_LocalPosition: {x: -0.4929489, y: -0.49331072, z: -6.336833e-15}
   m_LocalScale: {x: 2.6775734, y: 2.6775734, z: 2.677577}
   m_ConstrainProportionsScale: 0
@@ -5035,7 +5035,7 @@ GameObject:
   - component: {fileID: 8558735276452467832}
   m_Layer: 0
   m_Name: hand1_f_POLE
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5564,7 +5564,7 @@ GameObject:
   - component: {fileID: 6888276872333157166}
   m_Layer: 0
   m_Name: hand_f_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5622,8 +5622,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: adf1c56ba844f45f0ac7bdc95d1e550e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5699,7 +5699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8452873984534630783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000043438323, y: -7.00762e-10, z: -0.40843675, w: 0.9127866}
+  m_LocalRotation: {x: 0.00000004343833, y: -7.00758e-10, z: -0.40843722, w: 0.9127865}
   m_LocalPosition: {x: 0.000000046828358, y: 1.0000002, z: 0.00000008354762}
   m_LocalScale: {x: 1.070026, y: 1.070026, z: 1.0700259}
   m_ConstrainProportionsScale: 0
@@ -5929,7 +5929,7 @@ GameObject:
   - component: {fileID: 5005579626270203700}
   m_Layer: 0
   m_Name: hand_r_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5987,8 +5987,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: adf1c56ba844f45f0ac7bdc95d1e550e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6228,7 +6228,7 @@ GameObject:
   - component: {fileID: 9211463109485631323}
   m_Layer: 0
   m_Name: hips_CTRL
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6289,8 +6289,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1318562131
-  m_SortingLayer: 3
+  m_SortingLayerID: 770235945
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 04edb9a51324c481b8daf0e82bb7dcde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
