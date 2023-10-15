@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadinScene : MonoBehaviour
 {
+    public string DialogueSystemBasicsAlec;
    public void LoadScene()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("DialogueSystemBasicsAlec");
     
             }
 }
