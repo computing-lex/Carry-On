@@ -2,7 +2,7 @@
 { kits > 0:
 It looks like I can repair myself now. Should I?
     
-    * [Yes.]
+    + [Yes.]
         { health < 10: 
             ~ health = health + 1
             ~ kits = kits - 1
@@ -10,7 +10,7 @@ It looks like I can repair myself now. Should I?
         -else: 
            You feel fine, it would be a waste of resources to repair now.
         } -> return_to
-    * [No] 
+    + [No] 
         -> return_to
 }
 -> return_to
