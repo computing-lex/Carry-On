@@ -25,19 +25,23 @@ public class PauseMenu : MonoBehaviour
                 }
             }
         }
-        void PauseGame()
+        public void PauseGame()
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
         }
-        void ResumeGame()
+        public void ResumeGame()
         {
             pauseMenu.SetActive(false);
-            Time.timeScale = 0f;
+            Time.timeScale = 1f;
             isPaused = false;
 
         }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 
 
 
