@@ -6,25 +6,19 @@ public class BackgroundGeneration : MonoBehaviour
 {
     [SerializeField] private float amplitude;
     [SerializeField] private float offset;
-    [SerializeField] private float spacing;
     [SerializeField] private GameObject obj;
+    [SerializeField] private int[] sinAlt = new int[4];
 
     public GameObject spawnPoint;
     public GameObject killPoint;
 
-    [SerializeField] private const float generationSpacing = 1f;
+    [SerializeField] private float generationSpacing = 1f;
     private float lastGeneration;
 
-    private Transform oldLocation;
-    private Vector3[] positions;
-    private LineRenderer path;
-    [SerializeField] private int count;
-    [SerializeField] private int maxCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        oldLocation = spawnPoint.transform;
         lastGeneration = killPoint.transform.position.x;
     }
 
@@ -54,7 +48,7 @@ public class BackgroundGeneration : MonoBehaviour
 
     float WaveformGeneration(float x)
     {
-        float y = Mathf.Sin(x/3) + Mathf.Sin(x / 5) + Mathf.Sin(x / 7) + Mathf.Sin(x / 9);
+        float y = Mathf.Sin(x/sinAlt[0]) + Mathf.Sin(x / sinAlt[1]) + Mathf.Sin(x / sinAlt[2]) + Mathf.Sin(x / sinAlt[3]);
         y += offset;
         y /= amplitude;
 
