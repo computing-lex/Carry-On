@@ -73,7 +73,7 @@ public class DialogueManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            MakeChoice(1);
+            MakeChoice(0);
         }
 
     }
@@ -160,7 +160,7 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         
-        EventSystem.current.SetSelectedGameObject(choices[1].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
 
