@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEditor;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -61,7 +62,7 @@ public class DialogueManager : MonoBehaviour
         if (!dialogueisPlaying)
         {
             Debug.Log("Bruh");
-            return;
+
         }
 
         if (canContinueToNextLine && currentStory.currentChoices.Count == 0 &&
@@ -71,10 +72,7 @@ public class DialogueManager : MonoBehaviour
             ContinueStory();
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            MakeChoice(0);
-        }
+        StartCoroutine(ChooseChoice());
 
     }
 
@@ -110,7 +108,7 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-   private IEnumerator TypeLine(string line)
+    private IEnumerator TypeLine(string line)
     {
         dialogueText.text = "";
 
@@ -139,7 +137,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         int index = 0;
-        foreach(Choice choice in currentChoices)
+        foreach (Choice choice in currentChoices)
         {
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
@@ -151,16 +149,39 @@ public class DialogueManager : MonoBehaviour
             choices[i].gameObject.SetActive(false);
         }
 
-        StartCoroutine(SelectFirstChoice());
 
     }
 
-    private IEnumerator SelectFirstChoice()
+    private IEnumerator ChooseChoice()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            StartCoroutine(SelectFirstChoice(0));
+            yield return new WaitForSeconds(.05f);
+            MakeChoice(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            StartCoroutine(SelectFirstChoice(1));
+            yield return new WaitForSeconds(.05f);
+            MakeChoice(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            StartCoroutine(SelectFirstChoice(2));
+            yield return new WaitForSeconds(.05f);
+            MakeChoice(2);
+        }
+    }
+
+    private IEnumerator SelectFirstChoice(int index)
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[index].gameObject);
+
+
     }
 
 

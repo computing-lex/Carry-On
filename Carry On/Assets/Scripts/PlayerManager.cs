@@ -24,7 +24,18 @@ public class PlayerManager : MonoBehaviour
         {
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
         }
+        else
+        {
+
+        }
     }
 
-   
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+
+     eventActive = true;
+
+    }
+
+
 }
