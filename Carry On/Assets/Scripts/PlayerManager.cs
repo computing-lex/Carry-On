@@ -21,8 +21,6 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-
-
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
@@ -30,21 +28,8 @@ public class PlayerManager : MonoBehaviour
         }
         else
         {
-
+            myAnimator.SetBool(trigger, true);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-
-        eventActive = true;
-        myAnimator.SetBool(trigger, true);
-    }
-
-    private void OnTriggerExit2D(Collider2D collider)
-    {
-
-        eventActive = false;
-
-    }
 }

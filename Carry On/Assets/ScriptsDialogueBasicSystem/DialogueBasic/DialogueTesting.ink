@@ -4,6 +4,12 @@ INCLUDE EndGame.ink
 
 -> Hot_Dog
 
+=== Pick_Knot ===
+
+{~ ->Hot_Dog|->Test}
+
+-> Hot_Dog
+
 === Hot_Dog ===
 You found a 100 year old hot dog.
 Would you like to eat it?
@@ -20,4 +26,9 @@ The hotdog gets mad and beats you up.
 
 == What == 
 You heard me.
+-> END
+
+=== Test === 
+Yeet
+
 -> END
