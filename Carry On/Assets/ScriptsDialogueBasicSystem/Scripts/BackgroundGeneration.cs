@@ -12,6 +12,9 @@ public class BackgroundGeneration : MonoBehaviour
     public GameObject spawnPoint;
     public GameObject killPoint;
 
+    [SerializeField] private const float generationSpacing = 1f;
+    private float lastGeneration;
+
     private Transform oldLocation;
     private Vector3[] positions;
     private LineRenderer path;
@@ -22,24 +25,30 @@ public class BackgroundGeneration : MonoBehaviour
     void Start()
     {
         oldLocation = spawnPoint.transform;
+        lastGeneration = killPoint.transform.position.x;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if ((spawnPoint.transform.position.x - oldLocation.position.x) < spacing)
+        while (lastGeneration + generationSpacing < spawnPoint.transform.position.x)
         {
-            
-            float yLoc = WaveformGeneration(spawnPoint.transform.position.x);
+            generateObjects(lastGeneration + generationSpacing);
+            lastGeneration += generationSpacing;
+        }
+    }
 
-            oldLocation = spawnPoint.transform;
-
-            Vector3 location = new Vector3(oldLocation.position.x, yLoc, oldLocation.position.z);
- 
+    void generateObjects(float x)
+    {
+        float trashHeight = WaveformGeneration(x);
+        int numObjects = Mathf.RoundToInt(trashHeight * 5);
+        for (int i=0; i<numObjects; i++)
+        {
+            float trashX = Random.Range(x - (generationSpacing / 2), x + (generationSpacing / 2));
+            float trashY = Random.Range(0, trashHeight);
+            Vector3 location = new Vector3(trashX, trashY, spawnPoint.transform.position.z);
             Instantiate<GameObject>(obj, location, Quaternion.identity);
-
-            Debug.Log("Point generated!");
         }
     }
 
