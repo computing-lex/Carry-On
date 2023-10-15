@@ -143,8 +143,8 @@ ScriptedImporter:
     spritePosition: {x: 389, y: 1626}
   - name: head
     originalName: 
-    pivot: {x: 0.7006247, y: 0.10916311}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -164,13 +164,13 @@ ScriptedImporter:
     spritePosition: {x: 138, y: 1507}
   - name: handf
     originalName: 
-    pivot: {x: 0.62222314, y: 0.8392977}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 402
-      y: 1736
+      x: 401
+      y: 1737
       width: 122
       height: 167
     spriteID: 7a4f8af971ffde546a0b0c5bde69ae21
@@ -185,8 +185,8 @@ ScriptedImporter:
     spritePosition: {x: 365, y: 613}
   - name: Layer 21
     originalName: 
-    pivot: {x: 0.49080235, y: 0.9637078}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -206,13 +206,13 @@ ScriptedImporter:
     spritePosition: {x: 385, y: 738}
   - name: armupperf
     originalName: 
-    pivot: {x: 0.4491662, y: 0.7940832}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 401
-      y: 235
+      x: 399
+      y: 236
       width: 176
       height: 365
     spriteID: 7840cd97c351f0f41b214b28857ec7aa
@@ -248,8 +248,8 @@ ScriptedImporter:
     spritePosition: {x: 392, y: 1028}
   - name: legupperf
     originalName: 
-    pivot: {x: 0.31360942, y: 0.9233675}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -269,8 +269,8 @@ ScriptedImporter:
     spritePosition: {x: 259, y: 493}
   - name: leglowerr
     originalName: 
-    pivot: {x: 0.4791761, y: 0.9221054}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -311,8 +311,8 @@ ScriptedImporter:
     spritePosition: {x: 311, y: 444}
   - name: foot1
     originalName: 
-    pivot: {x: 0.7124952, y: 0.71169347}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -332,8 +332,8 @@ ScriptedImporter:
     spritePosition: {x: 295, y: 24}
   - name: chest
     originalName: 
-    pivot: {x: 0.62161654, y: 0.90312374}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -353,8 +353,8 @@ ScriptedImporter:
     spritePosition: {x: 193, y: 1050}
   - name: hips
     originalName: 
-    pivot: {x: 0.29322937, y: 0.663328}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -374,8 +374,8 @@ ScriptedImporter:
     spritePosition: {x: 196, y: 828}
   - name: neck
     originalName: 
-    pivot: {x: 0.41479275, y: 0.84594095}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -395,8 +395,8 @@ ScriptedImporter:
     spritePosition: {x: 282, y: 1331}
   - name: legupperr
     originalName: 
-    pivot: {x: 0.49309653, y: 0.85891396}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -416,8 +416,8 @@ ScriptedImporter:
     spritePosition: {x: 197, y: 487}
   - name: leglowerf
     originalName: 
-    pivot: {x: 0.3734804, y: 1.0568819}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -458,8 +458,8 @@ ScriptedImporter:
     spritePosition: {x: 237, y: 447}
   - name: Layer 43
     originalName: 
-    pivot: {x: 0.73241657, y: 0.72681546}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -479,8 +479,8 @@ ScriptedImporter:
     spritePosition: {x: 227, y: 24}
   - name: Layer 21
     originalName: 
-    pivot: {x: 0.53666663, y: 0.8933641}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -500,8 +500,8 @@ ScriptedImporter:
     spritePosition: {x: 159, y: 729}
   - name: armupperr
     originalName: 
-    pivot: {x: 0.72940373, y: 0.8486292}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -521,8 +521,8 @@ ScriptedImporter:
     spritePosition: {x: 171, y: 1054}
   - name: handr
     originalName: 
-    pivot: {x: 0.5946747, y: 0.8727809}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
