@@ -60,14 +60,20 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialogueisPlaying)
         {
+            Debug.Log("Bruh");
             return;
         }
 
         if (canContinueToNextLine && currentStory.currentChoices.Count == 0 &&
             Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("bruh");
+            //InputManager.GetInstance().GetSubmitPressed()
             ContinueStory();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            MakeChoice(0);
         }
 
     }
@@ -77,7 +83,7 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueisPlaying = true;
         dialoguePanel.SetActive(true);
-
+        Debug.Log("BruhTest");
         ContinueStory();
     }
 
