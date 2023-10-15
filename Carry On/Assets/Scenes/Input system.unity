@@ -353,8 +353,8 @@ GameObject:
   - component: {fileID: 979008223}
   - component: {fileID: 979008225}
   - component: {fileID: 979008224}
-  - component: {fileID: 979008227}
   - component: {fileID: 979008226}
+  - component: {fileID: 979008228}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -492,8 +492,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979008227}
-        m_TargetAssemblyTypeName: Loadingscene, Assembly-CSharp
+      - m_Target: {fileID: 979008228}
+        m_TargetAssemblyTypeName: LoadinScene, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979008218}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
@@ -645,7 +645,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &979008227
+--- !u!114 &979008228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 979008218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889400e483fd9c24eba47be3a9289701, type: 3}
+  m_Script: {fileID: 11500000, guid: bafef484cad6eeb4e8bf1968c311e9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1191788459
