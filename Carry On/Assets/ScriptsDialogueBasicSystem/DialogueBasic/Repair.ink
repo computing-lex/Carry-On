@@ -33,8 +33,6 @@ It looks like I can repair myself now. Should I?
     ~ battery = battery - 1
 }
 
-
-
 ~ days = days + 1
 
 -> return_to
