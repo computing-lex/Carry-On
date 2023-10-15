@@ -2,12 +2,13 @@ INCLUDE globals.ink
 INCLUDE Repair.ink
 INCLUDE EndGame.ink
 INCLUDE Flower.ink 
+INCLUDE All Hallow.ink
 
 ->Pick_Knot
 
 === Pick_Knot ===
 //->Hot_Dog|->Test |
-{~->Hot_Dog|->Test | ->Flower}
+{~->Hot_Dog|->Test | ->Flower| ->AllHallow}
 
 === Hot_Dog ===
 You found a 100 year old hot dog.
