@@ -73,7 +73,7 @@ public class DialogueManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            MakeChoice(1);
+            MakeChoice(0);
         }
 
     }
