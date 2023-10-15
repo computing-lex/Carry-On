@@ -23,7 +23,7 @@ public class BackgroundGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((spawnPoint.transform.position.x - oldLocation.position.x) == spacing)
+        if ((spawnPoint.transform.position.x - oldLocation.position.x) < spacing)
         {
             float yLoc = WaveformGeneration(spawnPoint.transform.position.x);
 
