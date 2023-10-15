@@ -7,7 +7,9 @@ public class BackgroundGeneration : MonoBehaviour
     [SerializeField] private float amplitude;
     [SerializeField] private float offset;
     [SerializeField] private GameObject obj;
+    [SerializeField] private float zOffset;
     [SerializeField] private int[] sinAlt = new int[4];
+
 
     public GameObject spawnPoint;
     public GameObject killPoint;
@@ -41,8 +43,9 @@ public class BackgroundGeneration : MonoBehaviour
         {
             float trashX = Random.Range(x - (generationSpacing / 2), x + (generationSpacing / 2));
             float trashY = Random.Range(0, trashHeight);
-            Vector3 location = new Vector3(trashX, trashY, spawnPoint.transform.position.z);
-            Instantiate<GameObject>(obj, location, Quaternion.identity);
+            Vector3 location = new Vector3(trashX, trashY, Random.Range(0f + zOffset, -2f + zOffset));
+            var newObj = Instantiate<GameObject>(obj, location, Quaternion.identity);
+            newObj.tag = "bg";
         }
     }
 
