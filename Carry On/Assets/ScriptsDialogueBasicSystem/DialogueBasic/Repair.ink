@@ -1,8 +1,7 @@
 === Repair(-> return_to) ===
-{ kits > 0:
-It looks like I can repair myself now. Should I?
+{ kits > 0: It looks like I can repair myself now. Should I?} {kits == 0: I don't have any kits to repair myself with.}
     
-    + [Yes.]
+    + {kits > 0} [1. Yes.]
         { health < 10: 
             ~ health = health + 1
             ~ kits = kits - 1
@@ -10,9 +9,10 @@ It looks like I can repair myself now. Should I?
         -else: 
            You feel fine, it would be a waste of resources to repair now.
         } -> return_to
-    + [No] 
+    + {kits > 0} [2. No]
+        You decide against repairing now.
         -> return_to
-}
+
 -> return_to
 
 === Update_Stats(-> return_to) === 

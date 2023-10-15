@@ -2,7 +2,7 @@
 VAR health = 10
 VAR battery = 10
 VAR days = 0
-VAR kits = 0
+VAR kits = 1
 
 INCLUDE Repair.ink
 INCLUDE EndGame.ink
