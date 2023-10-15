@@ -160,7 +160,7 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         
-        EventSystem.current.SetSelectedGameObject(choices[1].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
 
