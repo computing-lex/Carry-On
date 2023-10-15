@@ -13,6 +13,10 @@ public class BackgroundGeneration : MonoBehaviour
     public GameObject killPoint;
 
     private Transform oldLocation;
+    private Vector3[] positions;
+    private LineRenderer path;
+    [SerializeField] private int count;
+    [SerializeField] private int maxCount;
 
     // Start is called before the first frame update
     void Start()
@@ -20,16 +24,19 @@ public class BackgroundGeneration : MonoBehaviour
         oldLocation = spawnPoint.transform;
     }
 
+
     // Update is called once per frame
     void Update()
     {
         if ((spawnPoint.transform.position.x - oldLocation.position.x) < spacing)
         {
+            
             float yLoc = WaveformGeneration(spawnPoint.transform.position.x);
 
             oldLocation = spawnPoint.transform;
-            Vector3 location = new Vector3(oldLocation.position.x, yLoc, oldLocation.position.z);
 
+            Vector3 location = new Vector3(oldLocation.position.x, yLoc, oldLocation.position.z);
+ 
             Instantiate<GameObject>(obj, location, Quaternion.identity);
 
             Debug.Log("Point generated!");
