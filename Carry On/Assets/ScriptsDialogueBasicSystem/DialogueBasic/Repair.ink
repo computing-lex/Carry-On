@@ -1,4 +1,4 @@
-=== Repair(-> return_to) ===
+=== Repair ===
 { kits > 0: It looks like I can repair myself now. Should I?} {kits == 0: I don't have any kits to repair myself with.}
     
     + {kits > 0} [1. Yes.]
@@ -8,14 +8,14 @@
             Your health is now at {health}.
         -else: 
            You feel fine, it would be a waste of resources to repair now.
-        } -> return_to
+        } -> END
     + {kits > 0} [2. No]
         You decide against repairing now.
-        -> return_to
+        -> END
 
--> return_to
+-> END
 
-=== Update_Stats(-> return_to) === 
+=== Update_Stats === 
 // Update all variables and begin new cycle.
 
 {battery == 0: 
@@ -33,4 +33,4 @@
 
 ~ days = days + 1
 
--> return_to
+-> END

@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: acfc257cec8491b4285ecf8cbd6cacb2
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/SampleScene.unity
+    guid: d5f98e47f8cb9ec4da3f8cf51aa66ba0
+  - enabled: 0
+>>>>>>> Stashed changes
     path: Assets/Scenes/DialogueSystemBasicsAlec.unity
     guid: 69c04fba5f9910140a907829a5d86351
   - enabled: 1

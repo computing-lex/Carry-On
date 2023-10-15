@@ -9,7 +9,7 @@ INCLUDE Plush.ink
 
 === Pick_Knot ===
 //->Hot_Dog|->Test |
-{~->Hot_Dog|->Test | ->Flower| ->AllHallow}
+{~->Hot_Dog|->Test | ->Flower| ->AllHallow | ->Object | ->Plush}
 
 === Hot_Dog ===
 You found a 100 year old hot dog.
@@ -24,7 +24,7 @@ Would you like to eat it?
 == No == 
 The hotdog gets mad and beats you up.
             ~ health = health - 1
--> Repair(-> Hot_Dog)
+-> END
 
 == What == 
 You heard me.
