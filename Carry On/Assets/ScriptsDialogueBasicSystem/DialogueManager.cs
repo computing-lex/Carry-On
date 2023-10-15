@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using Ink.UnityIntegration;
 using UnityEngine.EventSystems;
 using UnityEditor;
 
@@ -10,6 +11,9 @@ public class DialogueManager : MonoBehaviour
 {
 
     private static DialogueManager instance;
+
+    [Header("Globals Ink File")]
+    [SerializeField] private InkFile globalsInkFile;
 
     [SerializeField] private float typingSpeed = 0.04f;
     [SerializeField] private AudioSource blip;
@@ -22,6 +26,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
 
     private TextMeshProUGUI[] choicesText;
+
+    private DialogueVariables dialogueVariables;
+
 
     private Story currentStory;
 
@@ -36,6 +43,8 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("more then 1");
         }
         instance = this;
+
+        dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
     }
 
     public static DialogueManager GetInstance()
@@ -83,6 +92,8 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
         Debug.Log("BruhTest");
         ContinueStory();
+
+        dialogueVariables.StartListening(currentStory);
     }
 
     private void ExitDialogueMode()
@@ -90,6 +101,9 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+
+        dialogueVariables.StopListening(currentStory);
+
     }
 
     private void ContinueStory()
