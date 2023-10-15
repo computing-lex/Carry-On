@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-
-    private CircleCollider2D trigger;
     
     [SerializeField] private GameObject root;
     [SerializeField] private float speed;
@@ -16,7 +14,7 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trigger = GetComponent<CircleCollider2D>();    
+
     }
 
     // Update is called once per frame
