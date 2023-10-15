@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Wall
-  - bg
-<<<<<<< Updated upstream
-  - kill
-=======
-  - HpBlock10
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Item
-  - Character
+  - 
+  - 
   - 
   - 
   - 
@@ -47,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Mesh
-    uniqueID: 1467743107
-    locked: 0
-  - name: Controller
-    uniqueID: 770235945
-    locked: 0
-  - name: Bones
-    uniqueID: 2028971521
     locked: 0
