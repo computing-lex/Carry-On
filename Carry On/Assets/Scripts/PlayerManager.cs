@@ -27,9 +27,8 @@ public class PlayerManager : MonoBehaviour
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
 
-            
-            root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
             myAnimator.SetBool(trigger, false);
+            root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
 
         }
         else

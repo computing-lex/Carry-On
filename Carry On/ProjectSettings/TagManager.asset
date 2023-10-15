@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Wall
   - bg
+<<<<<<< Updated upstream
+  - kill
+=======
+  - HpBlock10
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

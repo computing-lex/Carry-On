@@ -8,7 +8,7 @@ public class LoadinScene : MonoBehaviour
     public string DialogueSystemBasicsAlec;
    public void LoadScene()
     {
-        SceneManager.LoadScene("DialogueSystemBasicsAlec");
+        SceneManager.LoadScene("SampleScene");
     
             }
 }
