@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
-    public bool dialogueisPlaying { get; private set; }
+    [SerializeField] public bool dialogueIsPlaying { get; private set; }
 
     private bool canContinueToNextLine = false;
 
@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        dialogueisPlaying = false;
+        dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
         choicesText = new TextMeshProUGUI[choices.Length];
@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (!dialogueisPlaying)
+        if (!dialogueIsPlaying)
         {
             Debug.Log("Bruh");
 
@@ -79,7 +79,7 @@ public class DialogueManager : MonoBehaviour
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
-        dialogueisPlaying = true;
+        dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         Debug.Log("BruhTest");
         ContinueStory();
@@ -87,7 +87,7 @@ public class DialogueManager : MonoBehaviour
 
     private void ExitDialogueMode()
     {
-        dialogueisPlaying = false;
+        dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
     }

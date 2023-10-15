@@ -20,7 +20,8 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!eventActive)
+
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
         }
@@ -37,5 +38,10 @@ public class PlayerManager : MonoBehaviour
 
     }
 
+    private void OnTriggerExit2D(Collider2D collider)
+    {
 
+        eventActive = false;
+
+    }
 }
