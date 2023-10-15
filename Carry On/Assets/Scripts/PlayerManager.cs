@@ -10,7 +10,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private string trigger;
     [SerializeField] private int distanceToNextTrash;
-    [SerializeField] private AudioSource walkclip;
     [SerializeField] public GameObject Trigger1;
 
     public int days;
@@ -32,12 +31,13 @@ public class PlayerManager : MonoBehaviour
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
             myAnimator.SetBool(trigger, false);
 
-
         }
         else
         {
             myAnimator.SetBool(trigger, true);
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -53,4 +53,6 @@ public class PlayerManager : MonoBehaviour
         eventActive = false;
 
     }
+
+
 }
