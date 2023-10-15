@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
-using Ink.UnityIntegration;
 using UnityEngine.EventSystems;
 using UnityEditor;
 
@@ -12,8 +11,8 @@ public class DialogueManager : MonoBehaviour
 
     private static DialogueManager instance;
 
-    [Header("Globals Ink File")]
-    [SerializeField] private InkFile globalsInkFile;
+    //[Header("Globals Ink File")]
+    //[SerializeField] private InkFile globalsInkFile;
 
     [SerializeField] private float typingSpeed = 0.04f;
     [SerializeField] private AudioSource blip;
@@ -44,7 +43,7 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
 
-        dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+      //  dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
     }
 
     public static DialogueManager GetInstance()
