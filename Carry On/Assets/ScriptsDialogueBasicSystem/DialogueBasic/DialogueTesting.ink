@@ -1,22 +1,21 @@
-// Health and battery value
-VAR health = 10
-VAR battery = 10
-VAR days = 0
-VAR kits = 0
-
+INCLUDE globals.ink
 INCLUDE Repair.ink
 INCLUDE EndGame.ink
 
--> Hot_Dog
+->Pick_Knot
+
+=== Pick_Knot ===
+
+{~ ->Hot_Dog|->Test}
 
 === Hot_Dog ===
 You found a 100 year old hot dog.
 Would you like to eat it?
 
-    + [Yes] <> 
+    + [1. Yes] <> 
         You can't eat. Who do you think you are? -> What
-    + [No] -> No
-    + [What] -> What
+    + [2. No] -> No
+    + [3. What] -> What
 
 
 == No == 
@@ -25,4 +24,9 @@ The hotdog gets mad and beats you up.
 
 == What == 
 You heard me.
+-> END
+
+=== Test === 
+Yeet
+
 -> END

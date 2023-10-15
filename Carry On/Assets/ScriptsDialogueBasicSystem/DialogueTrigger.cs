@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+
     private bool playerInRange;
 
     private void Awake()
@@ -17,13 +18,11 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueisPlaying)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             Debug.Log("Yay!");
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-            }
+            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+
         }
     }
 
