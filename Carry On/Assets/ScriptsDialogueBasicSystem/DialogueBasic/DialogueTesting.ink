@@ -2,13 +2,11 @@ INCLUDE globals.ink
 INCLUDE Repair.ink
 INCLUDE EndGame.ink
 
--> Hot_Dog
+->Pick_Knot
 
 === Pick_Knot ===
 
 {~ ->Hot_Dog|->Test}
-
--> Hot_Dog
 
 === Hot_Dog ===
 You found a 100 year old hot dog.

@@ -8,25 +8,21 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-    [Header("Visual Cue")]
-    [SerializeField] private GameObject visualCue;
 
     private bool playerInRange;
 
     private void Awake()
     {
         playerInRange = false;
-        visualCue.SetActive(false);
-
     }
 
     private void Update()
     {
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            visualCue.SetActive(true);
             Debug.Log("Yay!");
             DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+
         }
     }
 
