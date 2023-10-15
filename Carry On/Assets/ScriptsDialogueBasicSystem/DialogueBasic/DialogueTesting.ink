@@ -22,6 +22,7 @@ Would you like to eat it?
 
 == No == 
 The hotdog gets mad and beats you up.
+            ~ health = health - 1
 -> Repair(-> Hot_Dog)
 
 == What == 
