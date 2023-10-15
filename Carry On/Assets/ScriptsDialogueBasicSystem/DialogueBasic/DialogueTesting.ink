@@ -13,10 +13,10 @@ INCLUDE EndGame.ink
 You found a 100 year old hot dog.
 Would you like to eat it?
 
-    + [Yes] <> 
+    + [1. Yes] <> 
         You can't eat. Who do you think you are? -> What
-    + [No] -> No
-    + [What] -> What
+    + [2. No] -> No
+    + [3. What] -> What
 
 
 == No == 
