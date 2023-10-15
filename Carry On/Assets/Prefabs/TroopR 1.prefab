@@ -3177,7 +3177,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4339623, g: 0.3901266, b: 0.30909577, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4838,6 +4838,7 @@ GameObject:
   - component: {fileID: 2843410504937899740}
   - component: {fileID: 6075665715060876182}
   - component: {fileID: 894637369987335655}
+  - component: {fileID: 5948227348754504570}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -5038,6 +5039,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5948227348754504570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435642082022682665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea0078d66908e240b015766c1f36a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  isPaused: 0
 --- !u!1 &8628447062131796147
 GameObject:
   m_ObjectHideFlags: 0
