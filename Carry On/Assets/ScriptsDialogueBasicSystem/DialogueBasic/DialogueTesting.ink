@@ -1,9 +1,4 @@
-// Health and battery value
-VAR health = 10
-VAR battery = 10
-VAR days = 0
-VAR kits = 1
-
+INCLUDE globals.ink
 INCLUDE Repair.ink
 INCLUDE EndGame.ink
 
