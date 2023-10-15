@@ -3,7 +3,8 @@ INCLUDE Repair.ink
 INCLUDE EndGame.ink
 INCLUDE Flower.ink 
 INCLUDE All Hallow.ink
-
+INCLUDE MoreScenarios.ink
+INCLUDE Plush.ink
 ->Pick_Knot
 
 === Pick_Knot ===
