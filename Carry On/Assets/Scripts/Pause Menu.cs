@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         pauseMenu.SetActive(false);
+
     }
         void Update()
         {
@@ -24,6 +25,12 @@ public class PauseMenu : MonoBehaviour
                     PauseGame();
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.Return) && pauseMenu.activeSelf == true)
+        {
+            QuitGame();
+        }
+
         }
         public void PauseGame()
         {
