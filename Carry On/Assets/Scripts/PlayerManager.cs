@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
     public Animator myAnimator;
     [SerializeField] private GameObject root;
     [SerializeField] private float speed;
+    [SerializeField] private string trigger;
 
     public int days;
     public bool eventActive = false;
@@ -23,6 +24,7 @@ public class PlayerManager : MonoBehaviour
         if (!eventActive)
         {
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
+            myAnimator.SetBool(trigger, false);
         }
         else
         {
@@ -33,8 +35,8 @@ public class PlayerManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
 
-     eventActive = true;
-
+        eventActive = true;
+        myAnimator.SetBool(trigger, true);
     }
 
 
