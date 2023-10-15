@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - bg
+  - kill
   layers:
   - Default
   - TransparentFX

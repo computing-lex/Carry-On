@@ -29,4 +29,13 @@ public class SpriteRandom : MonoBehaviour
         
     }
 
+    void OnTriggerEnter2D(Collider2D kill)
+    {
+        Debug.Log("Dead!!");
+        if (kill.gameObject.tag == "kill")
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
