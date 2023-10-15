@@ -1,5 +1,5 @@
 ===Object===
-As your walking, you see something shining?
+As you're walking, you see something shining.
 What would you like to do?
 
     *[1. Stop and Examine]

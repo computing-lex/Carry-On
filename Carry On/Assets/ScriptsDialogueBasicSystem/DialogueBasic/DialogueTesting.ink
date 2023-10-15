@@ -9,7 +9,7 @@ INCLUDE Plush.ink
 
 === Pick_Knot ===
 //->Hot_Dog|->Test |
-{~->Hot_Dog|->Test | ->Flower| ->AllHallow | ->Object | ->Plush}
+{~->Hot_Dog | ->Test | ->Flower | ->AllHallow | ->Object | ->Plush | ->Repair }
 
 === Hot_Dog ===
 You found a 100 year old hot dog.
