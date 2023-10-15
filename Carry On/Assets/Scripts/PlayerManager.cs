@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    
+    public Animator myAnimator;
     [SerializeField] private GameObject root;
     [SerializeField] private float speed;
 
@@ -26,9 +26,5 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("New Event!");
-        eventActive = true;
-    }
+   
 }
