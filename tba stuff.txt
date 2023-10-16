@@ -1,10 +1,9 @@
-
+Carry On
 - use all sounds made:
      - walking cycle
      - low battery warnings (medium / low)
      - choosing selection SFX
      - text blip versions
-
 - make a counter for each event 
 - make battery that changes vignette
 - add days survived event (ui stuff)
@@ -17,3 +16,4 @@
 Maybe:
 more sprites for trash bg
 more animations for robot
+some type of interaction feature ?
