@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    // Animator Controls
     public Animator myAnimator;
+    [SerializeField] private string animationTrigger;
+    
+    // Player movement
     [SerializeField] private GameObject root;
     [SerializeField] private float speed;
-    [SerializeField] private string trigger;
-    [SerializeField] private int distanceToNextTrash;
-    [SerializeField] public GameObject Trigger1;
 
+    // Event handling
+    [SerializeField] private int eventDistance;
+    [SerializeField] public GameObject eventTrigger;
+
+    // Player stats
     public int days;
     public bool eventActive = false;
 
@@ -27,13 +33,13 @@ public class PlayerManager : MonoBehaviour
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
 
-            myAnimator.SetBool(trigger, false);
+            myAnimator.SetBool(animationTrigger, false);
             root.transform.position = new Vector3(root.transform.position.x + (speed * Time.deltaTime), root.transform.position.y, root.transform.position.z);
 
         }
         else
         {
-            myAnimator.SetBool(trigger, true);
+            myAnimator.SetBool(animationTrigger, true);
         }
 
 
@@ -41,7 +47,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Trigger1.transform.position = new Vector3(Trigger1.transform.position.x + distanceToNextTrash, 0, 0);
+        eventTrigger.transform.position = new Vector3(eventTrigger.transform.position.x + eventDistance, 0, 0);
         eventActive = true;
         
     }
