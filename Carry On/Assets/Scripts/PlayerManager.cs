@@ -6,10 +6,12 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     // Animator Controls
+    [Header("Animation Controls")]
     public Animator myAnimator;
     [SerializeField] private string animationTrigger;
-    
+
     // Player movement
+    [Header("Player Movement")]
     [SerializeField] private GameObject root;
     [SerializeField] private float speed;
 
@@ -18,7 +20,12 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] public GameObject eventTrigger;
 
     // Player stats
+    [Header("Player Attributes")]
     public int days;
+    public int health;
+    public int maxHealth;
+    public int battery;
+
     public bool eventActive = false;
 
     // Start is called before the first frame update

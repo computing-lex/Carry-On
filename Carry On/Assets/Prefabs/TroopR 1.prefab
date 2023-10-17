@@ -1432,7 +1432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2322679505365541215}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000012645218, y: 0.0000000015224302, z: 0.007856568, w: 0.9999692}
+  m_LocalRotation: {x: 0.00000004220746, y: -0.0000000013511922, z: 0.007863288, w: 0.9999691}
   m_LocalPosition: {x: 0.000000006302319, y: 1.0000004, z: -0.00000008365443}
   m_LocalScale: {x: 1.1321584, y: 1.1321584, z: 1.1321584}
   m_ConstrainProportionsScale: 0
@@ -3509,7 +3509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5982889993076470836}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000064383165, y: 0.00000005440806, z: 0.6251957, w: -0.7804681}
+  m_LocalRotation: {x: -3.5527133e-15, y: -8.881783e-16, z: 0.6251981, w: -0.7804661}
   m_LocalPosition: {x: 0.000000017324613, y: 1.0000001, z: -0.00000008106374}
   m_LocalScale: {x: 0.24565832, y: 0.24565832, z: 0.24565825}
   m_ConstrainProportionsScale: 0
@@ -3911,7 +3911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7278754580235010930}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000019437048, y: -0.000000042184332, z: 0.9997603, w: 0.021896202}
+  m_LocalRotation: {x: -0.0000000019435542, y: -0.000000042184336, z: 0.9997602, w: 0.02189977}
   m_LocalPosition: {x: -0.24, y: -0.14, z: -0}
   m_LocalScale: {x: 2.3643932, y: 2.3643932, z: 2.3643932}
   m_ConstrainProportionsScale: 0
@@ -4836,9 +4836,9 @@ GameObject:
   - component: {fileID: 4512706740738323347}
   - component: {fileID: 8000342516664571344}
   - component: {fileID: 2843410504937899740}
+  - component: {fileID: 5948227348754504570}
   - component: {fileID: 6075665715060876182}
   - component: {fileID: 894637369987335655}
-  - component: {fileID: 5948227348754504570}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -4855,7 +4855,7 @@ Transform:
   m_GameObject: {fileID: 8435642082022682665}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27, y: -3.25, z: 0}
+  m_LocalPosition: {x: 0.66, y: -3.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4909,13 +4909,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAnimator: {fileID: 2178280633409327288}
+  animationTrigger: Stop
   root: {fileID: 8289420049274709433}
   speed: 1.2
-  trigger: Stop
-  distanceToNextTrash: 5
-  Trigger1: {fileID: 0}
+  eventDistance: 5
+  eventTrigger: {fileID: 0}
   days: 0
   eventActive: 0
+--- !u!114 &5948227348754504570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435642082022682665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea0078d66908e240b015766c1f36a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  isPaused: 0
 --- !u!50 &6075665715060876182
 Rigidbody2D:
   serializedVersion: 4
@@ -4925,7 +4939,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8435642082022682665}
   m_BodyType: 1
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -5039,20 +5053,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5948227348754504570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435642082022682665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea0078d66908e240b015766c1f36a8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  isPaused: 0
 --- !u!1 &8628447062131796147
 GameObject:
   m_ObjectHideFlags: 0
@@ -5323,7 +5323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171425618277460753, guid: 8199328d9df012645816685a0f62e928, type: 3}
       propertyPath: m_Name
-      value: Square (1)
+      value: Fog2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5389,7 +5389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171425618277460753, guid: 8199328d9df012645816685a0f62e928, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Fog1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5459,7 +5459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171425618277460753, guid: 8199328d9df012645816685a0f62e928, type: 3}
       propertyPath: m_Name
-      value: Square (2)
+      value: Fog3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
